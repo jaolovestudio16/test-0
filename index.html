@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinkjulieland Payment</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&displa
+y=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Prompt'
+, sans-serif;
+background-color: #fdf5ee; /* ครีม */
+background-image: radial-gradient(#fbcfe8 1px, transparent 1px);
+background-size: 20px 20px;
+}
+.bounce-hover:hover {
+transform: translateY(-2px);
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+cream: {
+50: '#fffdfa'
+,
+100: '#fdf5ee'
+,
+},
+brown: {
+200: '#e5d0c3'
+,
+300: '#d4b49e'
+,
+400: '#bc9680'
+,
+500: '#9d755d'
+,
+600: '#7a5743'
+,
+},
+pink: {
+100: '#fce7f3'
+,
+200: '#fbcfe8'
+,
+300: '#f9a8d4'
+,
+400: '#f472b6'
+,
+}
+}
+}
+}
+}
+</script>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4 text-brown-500 relative
+overflow-x-hidden bg-cream-50">
+<div id="toast" class="fixed top-6 left-1/2 transform -translate-x-1/2 bg-pink-400 text-white
+px-6 py-3 rounded-full shadow-md transition-all duration-300 opacity-0 -translate-y-4
+pointer-events-none z-50 flex items-center gap-2 font-medium text-sm border
+border-pink-200">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+stroke-width="2" stroke="currentColor" class="w-5 h-5">
+<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15
+9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+คัดลอกสำาเร็จ
+</div>
+<div class="relative z-10 mb-8 flex items-center justify-center gap-2 mt-4 text-brown-500">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+stroke-width="2" stroke="currentColor" class="w-7 h-7 text-pink-400">
+<path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0
+0118 0z" />
+<path stroke-linecap="round" stroke-linejoin="round" d="M9 9.563C9 9.252 9.252 9
+9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-
+.252.563-
+.563.563H9.564A.562.562 0
+019 14.437V9.564z" />
+</svg>
+<h1 class="text-2xl md:text-3xl font-bold tracking-wide">
+Pinkjulieland Payment
+</h1>
+</div>
+<div class="max-w-md w-full relative z-10">
+<svg class="absolute -top-6 -left-2 w-5 h-5 text-pink-300 rotate-12 animate-pulse"
+fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2
+8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42
+22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<svg class="absolute top-1/4 -right-4 w-4 h-4 text-brown-300 animate-bounce"
+fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17
+14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+<svg class="absolute top-1/2 -left-6 w-4 h-4 text-pink-200 rotate-45 animate-pulse"
+fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2
+8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42
+22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<svg class="absolute bottom-20 -right-2 w-5 h-5 text-brown-200 -rotate-12"
+fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17
+14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+<svg class="absolute -bottom-4 left-6 w-5 h-5 text-pink-300 -rotate-6 animate-pulse"
+fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2
+8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42
+22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<div class="bg-white p-2 rounded-[24px] border border-pink-200 shadow-sm relative
+z-10 mb-6">
+<div class
